@@ -1,1 +1,3 @@
-# tarefaa
+A: Divergências podem ocorrer devido a vários fatores, incluindo a precisão numérica, o número de termos na série (n) e o número de threads usadas. Aumentar o valor de "n" geralmente levará a uma estimativa mais precisa de π. O número de threads pode afetar a concorrência, mas, em teoria, não deve afetar o resultado final, desde que o programa seja implementado corretamente.
+
+B:  uma solução usando Mutex para garantir que a variável compartilhada "sum" seja acessada de forma segura por todas as threads. A diferença é que, com Mutex, você evita possíveis problemas de concorrência que podem ocorrer quando várias threads tentam atualizar a mesma variável compartilhada ao mesmo tempo. A implementação com Mutex pode ser mais lenta devido ao overhead de sincronização, mas garantirá resultados mais precisos.
